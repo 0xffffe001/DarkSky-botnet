@@ -1,0 +1,46 @@
+AddDefaultCharset UTF-8
+DirectoryIndex index.php
+RewriteEngine on
+
+RewriteRule ^/(.*)$ index.php$1 [L]
+RewriteRule ^sky/$ index.php?f=main&s=sky$1 [L]
+RewriteRule ^users/delete/$ application/api.php$1 [L]
+RewriteRule ^exit/$ application/api.php?type=exit&form=1$1 [L]
+RewriteRule ^main/([0-9]*)$ index.php?f=main&p=$1 [L]
+RewriteRule ^main/user_delete/([0-9]*)$ index.php?f=main&action=delete&id=$1 [L]
+RewriteRule ^main/banned_ip/(.*)$ index.php?f=main&action=banip&ip=$1 [L]
+RewriteRule ^users/([0-9]*)$ index.php?f=users$1 [L]
+RewriteRule ^settings/([0-9]*)$ index.php?f=settings&p=1$1 [L]
+RewriteRule ^settings/main/([0-9]*)$ index.php?f=settings&p=1$1 [L]
+RewriteRule ^settings/option/([0-9]*)$ index.php?f=settings&p=2$1 [L]
+RewriteRule ^api/$ application/api.php$1 [L]
+RewriteRule ^dump/1/$ application/dump.php?dump=1$1 [L]
+RewriteRule ^crypt/([0-9]*)$ index.php?f=crypt$1 [L]
+RewriteRule ^software/([0-9]*)$ index.php?f=product$1 [L]
+RewriteRule ^spy/([0-9]*)$ index.php?f=spy$1 [L]
+RewriteRule ^commands/([0-9]*)$ index.php?f=commands$1 [L]
+RewriteRule ^commands/delete/([0-9]*)$ index.php?f=commands&delete_c=$1 [L]
+RewriteRule ^commands/clear/$ index.php?f=commands&delete_l=1$1 [L]
+RewriteRule ^deletelog/$ index.php?f=main&logdelete=1$1 [L]
+RewriteRule ^blacklist/([0-9]*)$ index.php?f=blacklist$1 [L]
+
+AddType application/vnd.ms-fontobject eot
+AddType font/opentype otf
+AddType font/truetype ttf
+AddType application/x-font-woff woff
+
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-XSS-Protection "1; mode=block"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+SetEnvIfNoCase user-Agent ^FrontPage [NC,OR]
+SetEnvIfNoCase user-Agent ^Java.* [NC,OR]
+SetEnvIfNoCase user-Agent ^Microsoft.URL [NC,OR]
+SetEnvIfNoCase user-Agent ^MSFrontPage [NC,OR]
+SetEnvIfNoCase user-Agent ^Offline.Explorer [NC,OR]
+SetEnvIfNoCase user-Agent ^[Ww]eb[Bb]andit [NC,OR]
+SetEnvIfNoCase user-Agent ^Zeus [NC]
+SetEnvIfNoCase user-Agent ^Google [NC]
+SetEnvIfNoCase user-Agent ^Yandex [NC]
+SetEnvIfNoCase user-Agent ^Bing [NC]
+SetEnvIfNoCase user-Agent ^Yahoo [NC]

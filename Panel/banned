@@ -1,0 +1,119 @@
+#IP
+order allow,deny
+allow from all
+deny from 93.159.228.0/24
+deny from 93.159.228.22
+deny from 109.105.55.10
+deny from 162.247.72.199
+deny from 89.104.225.250
+deny from 67.137.36.66
+deny from 145.239.91.37
+deny from 176.14.121.36
+deny from 173.239.197.22
+deny from 77.247.181.163
+deny from 107.181.69.35
+deny from 204.101.161.159
+deny from 154.16.149.74
+deny from 93.115.95.205
+deny from 109.201.133.100
+deny from 192.36.27.7
+deny from 69.164.111.198
+deny from 52.58.12.201
+deny from 46.165.254.166
+deny from 207.102.138.40
+deny from 95.211.190.198
+deny from 64.113.32.29
+deny from 65.19.167.131
+deny from 93.80.116.186
+deny from 64.139.47.106
+deny from 199.127.224.*
+deny from 77.234.45.*
+deny from 93.159.228.*
+deny from 199.127.225.*
+deny from 199.127.226.*
+deny from 199.127.227.*
+deny from 84.128.0.0/10
+deny from 84.177.*
+deny from 84.177.*.*
+deny from 84.177.2.214
+deny from 202.56.255.50
+deny from 134.96.238.193
+deny from 95.26.187.113
+deny from 185.117.215.9
+deny from 50.47.68.26
+deny from 161.69.99.11
+deny from 95.108.149.136
+deny from 98.216.135.49
+deny from 178.8.17.254
+deny from 173.239.199.156
+deny from 173.239.195.28
+deny from 84.177.12.75
+deny from 81.17.242.236
+deny from 37.220.35.202
+deny from 23.129.64.101
+deny from 199.249.223.41
+deny from 104.223.123.98
+deny from 204.194.29.4
+deny from 95.25.6.246
+deny from 93.115.89.214
+deny from 128.31.0.13
+deny from 197.231.221.211
+deny from 45.56.156.11
+deny from 94.23.188.20
+deny from 87.118.115.176
+deny from 185.38.14.171
+deny from 170.250.140.52
+deny from 200.80.48.34
+deny from 173.254.216.66 | Reason: Запрещённое имя VTC
+deny from 66.180.193.219 | Reason: Запрещённое имя VTC
+deny from 18.85.22.204 | Reason: Запрещённое имя VTC
+deny from 216.218.134.12 | Reason: Обнаружено закодированное имя:p2NtVA
+deny from 195.60.77.53 | Reason: Обнаружено закодированное имя:vWH4hvuJnru7
+deny from 46.101.139.248 | Reason: Запрещённое имя VTC
+deny from 176.111.72.239 | Reason: Запрещённое имя VTC
+deny from 46.165.203.44 | Reason: Обнаружено закодированное имя:p2NtVA
+deny from 185.220.101.4 | Reason: Запрещённое имя VTC
+deny from 193.90.12.116 | Reason: Запрещённое имя VTC
+deny from 45.56.153.57 | Reason: Запрещённое имя VTC
+deny from 185.183.105.212 | Reason: Обнаружено закодированное имя:vWH4hvuJnru7
+deny from 5.254.79.66 | Reason: Запрещённое имя VTC
+deny from 89.144.12.14 | Reason: Запрещённое имя VTC
+deny from 85.214.93.122 | Reason: Обнаружено закодированное имя:vWH4hvuJnru7
+deny from 185.165.169.55 | Reason: Запрещённое имя VTC
+deny from 173.239.198.44 | Reason: Запрещённое имя VTC
+deny from 167.160.113.13 | Reason: Запрещённое имя VTC
+deny from 46.165.230.5 | Reason: Запрещённое имя VTC
+deny from 84.177.5.28 | Reason: Запрещённое имя VTC
+deny from 89.249.73.20 | Reason: Запрещённое имя VTC
+deny from 96.255.14.191 | Reason: Запрещённое имя VTC
+deny from 85.203.44.12 | Reason: Запрещённое имя VTC
+deny from 95.25.126.194 | Reason: Запрещённое имя VTC
+deny from 185.104.185.11 | Reason: Запрещённое имя VTC
+deny from 104.244.73.161 | Reason: Запрещённое имя VTC
+deny from 72.12.209.146 | Reason: Пользовательское действие
+deny from 66.129.102.52 | Reason: Пользовательское действие
+deny from 83.167.254.99 | Reason: Запрещённое имя VTC
+deny from 61.216.123.128 | Reason: Запрещённое имя VTC
+deny from 177.67.82.149 | Reason: Запрещённое имя VTC
+deny from 216.218.222.12 | Reason: Запрещённое имя VTC
+deny from 46.101.182.27 | Reason: Запрещённое имя VTC
+deny from 104.237.90.19 | Reason: Запрещённое имя VTC
+deny from 78.109.23.1 | Reason: Запрещённое имя VTC
+deny from 176.126.252.12 | Reason: Запрещённое имя VTC
+deny from 95.25.10.114 | Reason: Обнаружено закодированное имя:7LobnGz
+deny from 95.26.84.8 | Reason: Обнаружено закодированное имя:SUmUgiFUMmo
+deny from 134.249.151.231 | Reason: Пользовательское действи
+deny from 14.171.25.183 | Reason: [Анти-Детект] - кто-то пытался зайти без параметров
+deny from 194.28.90.241 | Reason: [Анти-Детект] - кто-то пытался зайти без параметров
+deny from 103.206.210.237 | Reason: [Анти-Детект] - кто-то пытался зайти без параметров
+deny from 212.96.71.76 | Reason: [Анти-Детект] - кто-то пытался зайти без параметров
+deny from 180.190.79.213 | Reason: [Анти-Детект] - кто-то пытался зайти без параметров
+deny from 14.229.190.77 | Reason: [Анти-Детект] - кто-то пытался зайти без параметров
+deny from 90.143.25.225 | Reason: [Анти-Детект] - кто-то пытался зайти без параметров
+deny from 45.250.69.235 | Reason: [Анти-Детект] - кто-то пытался зайти без параметров
+deny from 91.235.38.192 | Reason: [Анти-Детект] - кто-то пытался зайти без параметров
+deny from 37.214.56.213 | Reason: Пользовательское действие
+deny from 176.214.154.224 | Reason: Пользовательское действие
+deny from 178.95.119.122 | Reason: Пользовательское действие
+deny from 78.155.207.231 | Reason: Пользовательское действие
+deny from 46.118.55.106 | Reason: Пользовательское действие

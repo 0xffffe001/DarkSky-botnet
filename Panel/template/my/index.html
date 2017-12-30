@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<style>
+			#left {display: inline-block;width:80%;background:#999;padding-top: 25px;padding-bottom: 25px;height:100%;}
+			#right {display: inline-block;width:20%;background:#333;vertical-align:top;}
+			#right > table {width:100%;text-align:center;vertical-align:top;}
+			#right > table > tbody > tr > td, th {border-spacing:0;height:1px:padding: 0}
+			.but {display:inline-block;padding: 4px;padding-left:6px;padding-right:6px;background:#000;color:#fff;outline:none;border:1px solid #999;line-height:18px;border-radius:3px;width:100%;}
+			.s-but {display:none;padding: 4px;padding-left:6px;padding-right:6px;background:#000;color:#fff;outline:none;border:1px solid #999;line-height:18px;border-radius:3px;width:87%;margin: 0 auto;margin-top: 4.5px;margin-bottom:4.5px}
+		</style>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		
+		<table style="width:600px;height:50px;margin: 0 auto;background:#fff;">
+			<tbody>
+				<tr>
+					<td>
+						Tge
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+<script>
+var body = $('body');
+var table1 = $('table:eq(0)');
+var menu = '<table id="menu"><tbody>'
+					+ '<tr><td><button id="block">Создать блок</button><div><input type="button" class="s-but" value="Добавить в начало"></div></td></tr>'
+					+ '<tr><td><button id="inline-block">Создать inline-блок</button></td></tr>'
+					+ '<tr><td><button id="add_row_top">Add Row в начало таблицы</button></td></tr>'
+					+ '<tr><td><button id="add_row_bottom">Add Row в конец таблицы</button></td></tr>'
+					+ '</tbody></table>';
+var add_div_block = '<div style="padding: 15px;width:100%;display:block;"></div>';
+var add_div_inline = '<div style="padding: 15px;width:50%;display:inline-block;"></div>';
+
+body.each(function(){
+	var blocks = $(this).prepend('<div id="left"></div><div id="right"></div>');
+	$(blocks).find('#left').append(table1);
+	$('#right').append(menu).each(function(){
+				$('button').each(function(){
+					$(this).addClass('but');
+				});
+		});
+	
+});
+
+$('#block').click(function(){
+	$('.s-but:eq(0)').css('display', 'block');
+});
+$('#add_row_top').click(function(){
+	$('table:eq(0) tbody').prepend('<tr><td style="padding:9.5px;font-size:15.7px;">Text</td></tr>');
+});
+$('#add_row_bottom').click(function(){
+	$('table:eq(0) tbody').append('<tr><td style="padding:9.5px;font-size:15.7px;">Text</td></tr>');
+});
+
+</script>
+
+</body>
+</html>
